@@ -10,4 +10,4 @@
 let myName = 'Eugene';
 let admin = myName;
 
-console.log(admin)
+console.log(admin);
