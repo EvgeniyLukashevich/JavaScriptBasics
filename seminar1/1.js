@@ -13,7 +13,7 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-let degreesCelsius = prompt('Введите температуру в градусах Цельсия: ')
-let degreesFahrenheit = (9/5) * degreesCelsius + 32
+let degreesCelsius = prompt('Введите температуру в градусах Цельсия: ');
+let degreesFahrenheit = (9/5) * degreesCelsius + 32;
 
-alert(`Цельсий: ${degreesCelsius}, Фаренгейт: ${degreesFahrenheit}`)
+alert(`Цельсий: ${degreesCelsius}, Фаренгейт: ${degreesFahrenheit}`);
