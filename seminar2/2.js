@@ -5,7 +5,7 @@
 Если есть какие-либо недочеты в коде, можете их исправить.
 */
 
-let test = confirm("У вас много денег?");
-let message = test ? "Скоро будем у вас" : "До свидания";
+const TEST = confirm("У вас много денег?");
+const MESSAGE = TEST ? "Скоро будем у вас" : "До свидания";
 
-console.log(message);
+console.log(MESSAGE);

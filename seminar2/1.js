@@ -13,14 +13,14 @@
 в консоль "Одно или более значений некорректно.".
 */
 
-let positive = Number(prompt("Введите положительное число: "));
-let negative = Number(prompt("Введите отрицательное число: "));
+const POSITIVE = Number(prompt("Введите положительное число: "));
+const NEGATIVE = Number(prompt("Введите отрицательное число: "));
 
 if (
-  !isNaN(positive) &&
-  !isNaN(negative) &&
-  positive > 0 &&
-  negative < 0
+  !isNaN(POSITIVE) &&
+  !isNaN(NEGATIVE) &&
+  POSITIVE >= 0 &&
+  NEGATIVE < 0
 ) {
   console.log("Все значения верные");
 } else {

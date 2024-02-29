@@ -14,12 +14,12 @@
 число 32.
 */
 
-let dayNumber = parseInt(prompt("Введите целое число в интервале [1, 32):"));
+const DAY_NUMBER = parseInt(prompt("Введите целое число в интервале [1, 32):"));
 let decade;
 
-if (dayNumber >= 1 && dayNumber < 32) {
-  decade = Math.ceil(dayNumber / 10);
-  console.log(`Число ${dayNumber} попадает в ${decade} декаду месяца.`);
+if (!isNaN(DAY_NUMBER) && DAY_NUMBER >= 1 && DAY_NUMBER < 32) {
+  decade = Math.ceil(DAY_NUMBER / 10);
+  console.log(`Число ${DAY_NUMBER} попадает в ${decade} декаду месяца.`);
 } else {
   console.log("Неверное значение");
 }
