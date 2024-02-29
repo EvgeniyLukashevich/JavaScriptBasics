@@ -5,7 +5,6 @@
 Если есть какие-либо недочеты в коде, можете их исправить.
 */
 
-const TEST = confirm("У вас много денег?");
-const MESSAGE = TEST ? "Скоро будем у вас" : "До свидания";
+const test = confirm("У вас много денег?");
 
-console.log(MESSAGE);
+console.log(test ? "Скоро будем у вас" : "До свидания");
