@@ -27,35 +27,35 @@
 const userNumber1 = Number.parseInt(prompt("Введите целое число: "));
 
 function showNumberDigits1(number) {
-  const hundreds = Math.floor((number / 100) % 10);
-  const tens = Math.floor((number % 100) / 10);
-  const ones = number % 10;
-  console.log(
-    `В числе ${number} - сотен: ${hundreds}; десятков: ${tens}; единиц: ${ones}`
-  );
+    const hundreds = Math.floor((number / 100) % 10);
+    const tens = Math.floor((number % 100) / 10);
+    const ones = number % 10;
+    console.log(
+        `В числе ${number} - сотен: ${hundreds}; десятков: ${tens}; единиц: ${ones}`
+    );
 }
 
 if (!Number.isNaN(userNumber1)) {
-  showNumberDigits1(userNumber1);
+    showNumberDigits1(userNumber1);
 } else {
-  console.log("К сожалению, ввод некорректен.");
+    console.log("К сожалению, ввод некорректен.");
 }
 
 // Решение показывающее все разряды любого целого числа:
 const userNumber2 = Number.parseInt(prompt("Ещё раз введите целое число: "));
 
 function showNumberDigits2(number) {
-  let message = `В числе ${number}`;
-  const digitsCount = number.toString().length;
-  for (let i = 0; i < digitsCount; i++) {
-    message += `\nРазряд ${i + 1}: ${number % 10}`;
-    number = Math.floor(number / 10);
-  }
-  console.log(message);
+    let message = `В числе ${number}`;
+    const digitsCount = number.toString().length;
+    for (let i = 0; i < digitsCount; i++) {
+        message += `\nРазряд ${i + 1}: ${number % 10}`;
+        number = Math.floor(number / 10);
+    }
+    console.log(message);
 }
 
 if (!Number.isNaN(userNumber2)) {
-  showNumberDigits2(userNumber2);
+    showNumberDigits2(userNumber2);
 } else {
-  console.log("Некорректный ввод, увы");
+    console.log("Некорректный ввод, увы");
 }
