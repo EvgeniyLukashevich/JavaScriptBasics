@@ -12,7 +12,7 @@
 const userInput = Number(prompt("Введите число"));
 const cash = (number) => Number.parseFloat((number * 0.87).toFixed(2));
 
-if (!Number.isFinite(userInput) && userInput > 0) {
+if (Number.isFinite(userInput) && userInput > 0) {
   console.log(`Размер з/п за вычетом налогов равен ${cash(userInput)}`);
 } else {
   console.log("Значение задано неверно");
