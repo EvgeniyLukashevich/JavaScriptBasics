@@ -12,6 +12,5 @@ console.log('\nЗАДАНИЕ 2');
 const arr = [1, 2, 3, 4, 5, 6, 7];
 console.log(`Исходный массив: [${arr}]`);
 
-arr[2] = 100;
-arr.splice(3, 2);
+arr.splice(2, 3, 100);
 console.log(`Измененный массив: [${arr}]`);

@@ -46,7 +46,9 @@ function lookForMinValue(yourArray) {
 function lookForIndexesByValue(yourArray, value) {
   const result = [];
   for (let i = 0; i < yourArray.length; i++) {
-    if (yourArray[i] === value) result.push(i);
+    if (yourArray[i] === value) {
+      result.push(i);
+    }
   }
   return result;
 }

@@ -22,8 +22,8 @@ function drawOneSideSlide(floorsCount, char) {
 // Функция вывода "двусторонней" горки
 function drawBothSideSlide(floorsCount, char) {
   for (let i = 1; i <= floorsCount; i++) {
-    let spaces = " ".repeat(floorsCount - i);
-    let stars = char.repeat(i * 2 - 1);
+    const spaces = " ".repeat(floorsCount - i);
+    const stars = char.repeat(i * 2 - 1);
     console.log(spaces + stars + spaces);
   }
 }
