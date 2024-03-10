@@ -25,15 +25,7 @@ function makeObjectFromArrays(keyArray, valueArray) {
   return result;
 }
 
-function getStringFromObject(yourObject) {
-  let result = ``;
-  Object.keys(yourObject).forEach((key) => {
-    result += `${key}: ${yourObject[key]}\n`;
-  });
-  return result;
-}
-
 function showTask5() {
-  console.log(`ЗАДАНИЕ 5
-${getStringFromObject(makeObjectFromArrays(en, ru))}`);
+  console.log(`ЗАДАНИЕ 5`);
+  console.table(makeObjectFromArrays(en, ru));
 }
